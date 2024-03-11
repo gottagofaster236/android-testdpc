@@ -45,10 +45,24 @@ maven_install(
         "com.google.android.material:material:1.5.0",
         "com.google.guava:guava:31.1-android",
         "org.bouncycastle:bcpkix-jdk15on:1.70",
-        "org.bouncycastle:bcprov-jdk15on:1.70"
+        "org.bouncycastle:bcprov-jdk15on:1.70",
+        "org.robolectric:robolectric:4.7.3",
+        "com.google.truth:truth:1.4.2",
+        "androidx.test:core:1.5.0",
+        "com.google.testparameterinjector:test-parameter-injector:1.15"
     ],
     repositories = [
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",
     ],
 )
+
+
+http_archive(
+    name = "robolectric",
+    urls = ["https://github.com/robolectric/robolectric-bazel/archive/4.7.3.tar.gz"],
+    strip_prefix = "robolectric-bazel-4.7.3",
+    integrity = "sha256-l/Fp058ZQSvdB/1sJ03NoKfI9iP38Aqlo7lJlPxvDsQ=",
+)
+load("@robolectric//bazel:robolectric.bzl", "robolectric_repositories")
+robolectric_repositories()

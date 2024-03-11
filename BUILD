@@ -70,7 +70,11 @@ android_library(
 android_library(
     name = "test_deps",
     exports = [
-
+        "@maven//:org_robolectric_robolectric",
+        "@maven//:com_google_truth_truth",
+        "@robolectric//bazel:android-all",
+        "@maven//:androidx_test_core",
+        "@maven//:com_google_testparameterinjector_test_parameter_injector"
     ],
 )
 

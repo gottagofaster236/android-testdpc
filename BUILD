@@ -183,6 +183,7 @@ android_local_test(
         ":testdpc_lib",
         ":test_deps"
     ],
+    custom_package = "com.afwsamples.testdpc.policy.wifimanagement",
 )
 
 java_test(

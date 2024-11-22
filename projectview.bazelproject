@@ -1,0 +1,7 @@
+targets:
+  //...
+
+derive_targets_from_directories: false
+import_depth: 0
+build_manual_targets: false
+enable_native_android_rules: true

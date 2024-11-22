@@ -145,6 +145,7 @@ android_local_test(
         ":testdpc_lib",
         ":test_deps"
     ],
+    custom_package = "com.afwsamples.testdpc.common",
 )
 
 android_local_test(
@@ -156,6 +157,7 @@ android_local_test(
         ":androidx_deps",
         ":test_deps"
     ],
+    custom_package = "com.afwsamples.testdpc.feedback",
 )
 
 android_local_test(
@@ -166,6 +168,7 @@ android_local_test(
         ":testdpc_lib",
         ":test_deps"
     ],
+    custom_package = "com.afwsamples.testdpc.policy.wifimanagement",
 )
 
 android_local_test(

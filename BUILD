@@ -71,6 +71,8 @@ android_library(
     name = "test_deps",
     exports = [
         "@maven//:org_robolectric_robolectric",
+        "@maven//:org_robolectric_annotations",
+        "@maven//:org_robolectric_shadows_framework",
         "@maven//:com_google_truth_truth",
         "@robolectric//bazel:android-all",
         "@maven//:androidx_test_core",
